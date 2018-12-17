@@ -1,0 +1,11 @@
+{
+  "name": "kohonen_network",
+  "version": "1.0.0",
+  "description": "Simple kohonen network",
+  "main": "kohonen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pmo1998",
+  "license": "ISC"
+}
