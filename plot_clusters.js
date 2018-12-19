@@ -24,9 +24,10 @@ var plot=(function() {
 		return Object.values(traces);
 	}
 
-	let getClustersImage=function getClustersImage(data, cluster_numbers, parameter_indexes, img_name) {
+	let getClustersImage=function getClustersImage(data, cluster_numbers, parameter_indexes, xaxis_title, yaxis_title,img_name) {
 		const plotly = require('plotly')('name','key');
-		let figure = { 'data': getTraces(data, cluster_numbers, parameter_indexes)};
+		let layout={ xaxis: {title: xaxis_title},yaxis: {title: yaxis_title} };
+		let figure = { data: getTraces(data, cluster_numbers, parameter_indexes),layout: layout};
 		let imgOpts = {
 		    format: 'png',
 		    width: 1000,

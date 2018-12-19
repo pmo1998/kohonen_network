@@ -8,6 +8,6 @@ let SOM_=new SOM(number_of_clusters);
 SOM_.init(learning_rate,epochs,dimension);
 SOM_.training(training_data);
 SOM_.clustering(testing_data);
-plot.getClustersImage(testing_data,3,[0,1],'sepal');
-plot.getClustersImage(testing_data,3,[2,3],'petal');
+plot.getClustersImage(testing_data,3,[0,1],'Sepal width (cm)','Sepal length (cm)','sepal');
+plot.getClustersImage(testing_data,3,[2,3],'Petal width (cm)','Petal length (cm)','petal');
 
